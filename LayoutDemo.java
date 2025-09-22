@@ -40,7 +40,7 @@ public class LayoutDemo extends JFrame implements ActionListener{
         for (int column = 0; column < x; column ++){
             for (int row = 0; row < y; row++){
                 grid [column][row] = new Grid(x,y);
-                grid [column][row].setSize(10, 10);
+                grid [column][row].setSize(50, 50);
                 grid [column][row].setColor (column + row);
                 grid [column][row].setOpaque(true);
                 grid [column][row].setBorderPainted(false);
