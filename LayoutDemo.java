@@ -40,11 +40,12 @@ public class LayoutDemo extends JFrame implements ActionListener{
         for (int column = 0; column < x; column ++){
             for (int row = 0; row < y; row++){
                 grid [column][row] = new Grid(x,y);
-                grid [column][row].setSize(50, 50);
                 grid [column][row].setColor (column + row);
                 grid [column][row].setOpaque(true);
                 grid [column][row].setBorderPainted(false);
                 grid [column][row].setEnabled(false);
+                grid[column][row].setPreferredSize(new Dimension(80, 80));
+
                 
                 grid [column][row].addActionListener(this);
                 bottomPanel.add(grid[column][row]);
