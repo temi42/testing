@@ -44,7 +44,7 @@ public class LayoutDemo extends JFrame implements ActionListener{
                 grid [column][row].setOpaque(true);
                 grid [column][row].setBorderPainted(false);
                 grid [column][row].setEnabled(false);
-                grid[column][row].setPreferredSize(new Dimension(80, 80));
+                grid [column][row].setPreferredSize(new Dimension(80, 80));
 
                 
                 grid [column][row].addActionListener(this);
